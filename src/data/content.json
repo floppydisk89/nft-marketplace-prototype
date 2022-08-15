@@ -1,0 +1,76 @@
+{
+  "marketplace": {
+    "banner_carousel": [
+      {
+        "title": "SupperGucci",
+        "subtitle": "Save your favorite NFT",
+        "image": "https://openseauserdata.com/files/bc8d2700f019097f333acd26be02ce54.jpg"
+      },
+      {
+        "title": "Clone X",
+        "subtitle": "Have you got your Clone?",
+        "image": "https://lh3.googleusercontent.com/4elUtz8UyFYDH34vDxd4hpQX8S-EdkFq8s9ombkuQTDBWLwHvsjRM_RXWT2zX8Vt2bAiO2BHslwN57FyTW1JIn_FyFI0BsZfmvmeJQ=h600"
+      },
+      {
+        "title": "To Be Free",
+        "subtitle": "Celebrate freedom",
+        "image": "https://openseauserdata.com/files/a70a2c9c912311424a091aeaec8a4b41.png"
+      },
+      {
+        "title": "Transcendent",
+        "subtitle": "Transcend your limits",
+        "image": "https://openseauserdata.com/files/9a4e22c5e97af27085b44e3321d3553e.png"
+      }
+    ],
+    "nft_grid": [
+      {
+        "image": "./nfts/1.png",
+        "title": "1000",
+        "author": "KryptoBirdz",
+        "current_bid": "84"
+      },
+      {
+        "image": "./nfts/2.png",
+        "title": "1002",
+        "author": "KryptoBirdz",
+        "current_bid": "150"
+      },
+      {
+        "image": "./nfts/3.png",
+        "title": "1003",
+        "author": "KryptoBirdz",
+        "current_bid": "154"
+      },
+      {
+        "image": "./nfts/4.png",
+        "title": "1004",
+        "author": "KryptoBirdz",
+        "current_bid": "84"
+      },
+      {
+        "image": "./nfts/5.png",
+        "title": "1005",
+        "author": "KryptoBirdz",
+        "current_bid": "150"
+      },
+      {
+        "image": "./nfts/6.png",
+        "title": "1006",
+        "author": "KryptoBirdz",
+        "current_bid": "154"
+      },
+      {
+        "image": "./nfts/7.png",
+        "title": "1007",
+        "author": "KryptoBirdz",
+        "current_bid": "84"
+      },
+      {
+        "image": "./nfts/8.png",
+        "title": "1008",
+        "author": "KryptoBirdz",
+        "current_bid": "150"
+      }
+    ]
+  }
+}

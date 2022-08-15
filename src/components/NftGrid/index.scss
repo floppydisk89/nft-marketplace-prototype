@@ -1,0 +1,56 @@
+.nft-grid-container {
+  width: 80%;
+  max-width: 1300px;
+  margin: 2rem auto 10rem;
+  border-radius: 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .grid {
+    display: inline-flex;
+    flex-wrap: wrap;
+    place-content: space-evenly;
+  }
+
+  .card {
+    height: 25rem;
+    width: 16rem;
+    margin: 2rem;
+    overflow: hidden;
+    text-align: left;
+
+    .nft-image {
+      width: 100%;
+      scale: 1.1;
+    }
+  }
+
+  .nft-about {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .title {
+    margin-bottom: 0.2rem;
+  }
+
+  .author {
+    margin-block-start: 0;
+  }
+
+  .button {
+    text-align: center;
+    background: linear-gradient(
+      83.2deg,
+      rgb(150, 93, 233) 10.8%,
+      rgb(99, 88, 238) 94.3%
+    );
+    color: #fafafa;
+    border-radius: 4px;
+    padding: 0.6rem;
+    margin-left: 1rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    align-self: center;
+  }
+}
