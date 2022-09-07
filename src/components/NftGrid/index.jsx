@@ -1,25 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { mintNft } from '../../services/web3.service';
+import { setOwnedNfts } from '../../store/sessionStateSlice';
 
 import './index.scss';
 import data from '../../data/content.json';
 
 export default function NftGrid() {
-  const [content, setContent] = useState({});
-
   const dispatch = useDispatch();
+  const [content, setContent] = useState({});
   const sessionState = useSelector((state) => state.sessionState);
 
   useEffect(() => {
     setContent(data.marketplace.nft_grid);
-  }, []);
+  }, [sessionState]);
 
-  function mintSelectedNft(nftId) {
+  async function mintSelectedNft(nftId) {
     if (sessionState.ownedNfts.indexOf(nftId) > -1 === true) return;
 
     if (sessionState.walletAddress) {
-      mintNft(sessionState.ethereumContract, sessionState.walletAddress, nftId);
+      const newMintedNft = await mintNft(
+        sessionState.ethereumContract,
+        sessionState.walletAddress,
+        nftId
+      );
+      dispatch(setOwnedNfts([...sessionState.ownedNfts, newMintedNft]));
     } else {
       alert('no wallet connected to mint this nft.');
     }

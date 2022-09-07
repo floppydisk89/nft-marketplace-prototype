@@ -76,6 +76,7 @@ async function mintNft(contract, userWalletAddress, nftId) {
         console.log(receipt);
         alert(`NFT ${nftId} was minted by ${userWalletAddress}`);
       });
+    return nftId;
   } catch (error) {
     console.error('Unable to mint a token that was already minted.');
   }
