@@ -24,48 +24,56 @@
     ],
     "nft_grid": [
       {
+        "id": "n01",
         "image": "./nfts/1.png",
         "title": "1000",
         "author": "KryptoBirdz",
         "current_bid": "84"
       },
       {
+        "id": "n02",
         "image": "./nfts/2.png",
         "title": "1002",
         "author": "KryptoBirdz",
         "current_bid": "150"
       },
       {
+        "id": "n03",
         "image": "./nfts/3.png",
         "title": "1003",
         "author": "KryptoBirdz",
         "current_bid": "154"
       },
       {
+        "id": "n04",
         "image": "./nfts/4.png",
         "title": "1004",
         "author": "KryptoBirdz",
         "current_bid": "84"
       },
       {
+        "id": "n05",
         "image": "./nfts/5.png",
         "title": "1005",
         "author": "KryptoBirdz",
         "current_bid": "150"
       },
       {
+        "id": "n06",
         "image": "./nfts/6.png",
         "title": "1006",
         "author": "KryptoBirdz",
         "current_bid": "154"
       },
       {
+        "id": "n07",
         "image": "./nfts/7.png",
         "title": "1007",
         "author": "KryptoBirdz",
         "current_bid": "84"
       },
       {
+        "id": "n08",
         "image": "./nfts/8.png",
         "title": "1008",
         "author": "KryptoBirdz",
