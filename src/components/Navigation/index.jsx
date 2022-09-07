@@ -7,20 +7,10 @@ import {
   setEthereumContract,
   clearState,
 } from '../../store/sessionStateSlice';
-
-import {
-  loadWeb3,
-  connectAndLoadEthereumWallet,
-  getNetworkId,
-  getNetworkType,
-  getContract,
-  getNfts,
-} from '../../services/web3.service';
+import { loadWeb3, getNetworkType } from '../../services/web3.service';
+import { walletConnector } from '../../services/walletConnector.service';
 
 import './index.scss';
-
-// Contract Abi
-import KryptoBirdAbiContract from '../../abis/KryptoBird.json';
 
 import metamaskIcon from '../../assets/icons/metamask.png';
 import wifiIcon from '../../assets/icons/wifi.svg';
@@ -57,21 +47,8 @@ export default function Navigation() {
 
     setIsConnected(true);
 
-    const userWalletAddress = await connectAndLoadEthereumWallet(web3Provider);
-    const ethereumNetworkId = await getNetworkId(web3Provider);
-    const ethereumContract = await getContract(
-      web3Provider,
-      KryptoBirdAbiContract,
-      ethereumNetworkId
-    );
-
-    const userOwnedNfts = await getNfts(ethereumContract);
-
-    dispatchSessionStateToStore({
-      userWalletAddress,
-      ethereumNetworkId,
-      ethereumContract,
-      userOwnedNfts,
+    walletConnector(web3Provider).then((result) => {
+      dispatchSessionStateToStore(result);
     });
   }
 

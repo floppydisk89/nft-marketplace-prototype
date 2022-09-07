@@ -1,0 +1,15 @@
+node_modules/
+package_lock.json
+src/abis/SafeMath.json
+src/abis/Migrations.json
+src/abis/KryptoBird.json
+src/abis/IERC721Metadata.json
+src/abis/IERC721Enumerable.json
+src/abis/IERC721.json
+src/abis/IERC165.json
+src/abis/ERC721Metadata.json
+src/abis/ERC721Enumerable.json
+src/abis/ERC721Connector.json
+src/abis/ERC721.json
+src/abis/ERC165.json
+src/abis/Counters.json
