@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { mintNft } from '../../services/web3.service';
 import { setOwnedNfts } from '../../store/sessionStateSlice';
@@ -8,12 +8,8 @@ import data from '../../data/content.json';
 
 export default function NftGrid() {
   const dispatch = useDispatch();
-  const [content, setContent] = useState({});
   const sessionState = useSelector((state) => state.sessionState);
-
-  useEffect(() => {
-    setContent(data.marketplace.nft_grid);
-  }, [sessionState]);
+  const content = data.marketplace.nft_grid;
 
   async function mintSelectedNft(nftId) {
     if (sessionState.ownedNfts.indexOf(nftId) > -1 === true) return;
